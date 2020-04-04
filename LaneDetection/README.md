@@ -1,46 +1,26 @@
 # **Finding Lane Lines on the Road** 
+In this project, I demonstrate lane detection using Hough lines. Here, we can see that although, this algrithm works well on two sample videos, it isn't good enough for the third video. The ouput can be seen below.
 
-## Writeup Template
+### Pipeline
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Finding Lane Lines on the Road**
-
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
-
+Input Image is as shown below.
 [//]: # (Image References)
+[image1]: ./output_images/input_img.png "Sample Input Image"
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
----
-
-### Reflection
-
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
-
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+![input image][./output_images/input_img.png]
+My pipeline consisted of 5 steps.
 
 ![alt text][image1]
 
 
-### 2. Identify potential shortcomings with your current pipeline
-
+### Shortcomings
 
 One potential shortcoming would be what would happen when ... 
 
 Another shortcoming could be ...
 
 
-### 3. Suggest possible improvements to your pipeline
+### Possible improvements
 
 A possible improvement would be to ...
 
