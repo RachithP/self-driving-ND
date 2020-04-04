@@ -6,7 +6,7 @@ In this project, I demonstrate lane detection using Hough lines. Here, we can se
 Input Image is as shown below.
 ![input image](output_images/input_img.png)
 
-My pipeline consisted of 5 steps.
+My pipeline consisted of 7 steps.
 
 - Convert Image to Grayscale. This is required for canny edge detection algorithm.
 ![Grayscale Image](output_images/grayscale.png)
@@ -29,6 +29,7 @@ My pipeline consisted of 5 steps.
 3. find average slope of left lanes and right lanes
 4. average all points along the left and right region to calculate the average intercept
 5. Now, calculate the end points of the lanes using the above calculated slope and intercept values.
+6. Also, if at any time, either left or right lines are not found, use previous images' values.
 ![Hough lines](output_images/hough_lines.png)
 
 - Overlay the lines on the input image
