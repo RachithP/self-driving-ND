@@ -4,10 +4,8 @@ In this project, I demonstrate lane detection using Hough lines. Here, we can se
 ### Pipeline
 
 Input Image is as shown below.
-[//]: # (Image References)
-[image1]: ./output_images/input_img.png "Sample Input Image"
+![input image][https://github.com/RachithP/self-driving-ND/tree/master/LaneDetection/output_images/input_img.png]
 
-![input image][./output_images/input_img.png]
 My pipeline consisted of 5 steps.
 
 ![alt text][image1]
