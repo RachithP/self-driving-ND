@@ -73,7 +73,7 @@ The Pipeline
   * Next, an histogram along columns is analysed to obtain the starting positions. base_xleft and base_xright of left and right lanes along the y_max of the image. A small window is fitted around these starting positions. Since, we know that the lines move up, we expand the current window along xdirection by margin amount and shift the window up.
   * Get coordinates of non-zero pixels in this window. Update the base_x* position according to pixels in this window.
   * Repeat this process for number of windows defined.
-    [Sliding Windows](./output_images/sliding-windows-on-warped-image.png)
+    ![Sliding Windows](./output_images/sliding-windows-on-warped-image.png)
  
 * Polyfit
   * Once the effective pixels are obtained, 2nd degree polynoimal is fitted to these pixel coordinates to obtain line equation coefficients.
