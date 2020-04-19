@@ -47,6 +47,24 @@ The Pipeline
   * We need to take into account the perspective view of the image and convert it to actual(parallel lines are parallel) view to be able to effectively calculate polynomial line fit.
   * Bird's eye view of the masked image is obtained using Homography transformation between the image plane and a plane that is parallel to our eye vision.
   * Source points are obtained from the corners of the polygon displayed above. Destination points are taken to be a rectangle that of image size.
+  * Source points used were
+  ```
+     [[
+         (150, height)                         
+         (width/2 - 100, height/2 + 100)
+         (width/2 + 120, height/2 + 100)
+         (width-100, height)                            
+     ]]
+   ```
+  * Destination points used were
+  ```
+     [[
+         (300, height)                         
+         (300, 0)
+         (width - 300, 0)
+         (width - 300, height)                            
+     ]]
+   ```
    ![Bird's eye view](./output_images/bird's-eye-view.png)
  
 * Sliding window
@@ -66,6 +84,7 @@ The Pipeline
   * Radius of curvature is calculated according to the formula [radius of curvature](https://en.wikipedia.org/wiki/Radius_of_curvature)
   * Separate curvature is calulated and then averaged for the two lanes
   * The vehicle center(camera center) is the image's center. The bottom of the image, gives the location of the vehicle's center with respect to lane center(average of offset coefficients from the lane fit coefficients of left and right lanes)
+  * All calulcations will be in image plane. Hence, they need to be converted from pixel space to metric space. This is achieved using the convertion 1m along x-axis = `3.7 / 700` and 1m along y-axis = `30 / 720`. This is a linear transformation. For x-axis, 700 pixels is equivalent to 3.7m and for Y-axis 720 pixels are equivalent to 30m.
   
 * Warp back onto image plane
   ![Warp back to image plane](./output_images/Warp-back-to-image-plane.png)
