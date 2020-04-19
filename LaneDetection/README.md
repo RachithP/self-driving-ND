@@ -1,5 +1,7 @@
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
 # **Finding Lane Lines on the Road** 
-In this project, I demonstrate lane detection using Hough lines. Here, we can see that although, this algrithm works well on two sample videos, it isn't good enough for the third video. The ouput can be seen below.
+This project is part of Udacity's self-driving NanoDegree program. In this project, I demonstrate lane detection using Hough lines. Here, we can see that although, this algrithm works well on two sample videos, it isn't good enough for the third video. The ouput can be seen below.
 
 ### Pipeline
 
