@@ -1,3 +1,6 @@
 [submodule "ExtendedKalmanFilter/CarND-Mercedes-SF-Utilities"]
 	path = ExtendedKalmanFilter/CarND-Mercedes-SF-Utilities
 	url = https://github.com/udacity/CarND-Mercedes-SF-Utilities.git
+[submodule "ExtendedKalmanFilter/uWebSockets"]
+	path = ExtendedKalmanFilter/uWebSockets
+	url = https://github.com/uWebSockets/uWebSockets
